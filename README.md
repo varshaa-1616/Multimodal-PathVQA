@@ -100,10 +100,10 @@ https://arxiv.org/abs/2003.10286
 
 | Metric | Score |
 |---|---|
-| Overall EM | 59.09% |
-| Yes/No Accuracy | 82.28% |
-| Open-ended EM | 50.56% |
-| F1 Score | 50.92% |
+| Overall EM | 60.39% |
+| Yes/No Accuracy | 79.27% |
+| Open-ended EM | 53.45% |
+| F1 Score | 53.82% |
 
 ---
 
