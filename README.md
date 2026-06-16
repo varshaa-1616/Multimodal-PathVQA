@@ -9,6 +9,7 @@ This repository contains the implementation, experiments, and analysis for our p
 The project focuses on developing deep learning-based Visual Question Answering (VQA) systems for pathology images using multiple multimodal architectures.
 
 We extensively experimented with:
+
 - CNN-based image encoders
 - Vision Transformers
 - Text Transformers
@@ -36,15 +37,16 @@ The project evaluates and compares multiple architectures on the **PathVQA datas
 
 The dataset consists of pathology images paired with medical questions and answers.
 
-| Property | Value |
-|---|---|
-| Total QA Pairs | 32,799 |
-| Unique Images | 4,998 |
-| Train Images | 2,499 |
-| Validation Images | 1,499 |
-| Test Images | 1,000 |
+| Property          | Value  |
+| ----------------- | ------ |
+| Total QA Pairs    | 32,799 |
+| Unique Images     | 4,998  |
+| Train Images      | 2,499  |
+| Validation Images | 1,499  |
+| Test Images       | 1,000  |
 
 ## Question Types
+
 - What
 - Yes/No
 - Where
@@ -52,6 +54,7 @@ The dataset consists of pathology images paired with medical questions and answe
 - Others
 
 ## Original Paper
+
 He et al., 2020  
 https://arxiv.org/abs/2003.10286
 
@@ -64,70 +67,76 @@ https://arxiv.org/abs/2003.10286
 # Method 1 — Faster R-CNN + GRU + BAN
 
 ## Architecture
+
 - Vision Encoder: Faster R-CNN
 - Text Encoder: GRU
 - Fusion: Bilinear Attention Network (BAN)
 
 ## Key Features
+
 - Region-based visual reasoning
 - Attention-driven fusion
 - Fine-grained image-text interaction
 
 ## Performance
 
-| Metric | Score |
-|---|---|
-| Overall EM | 46.03% |
+| Metric          | Score  |
+| --------------- | ------ |
+| Overall EM      | 46.03% |
 | Yes/No Accuracy | 78.03% |
-| Open-ended EM | 34.26% |
-| F1 Score | 34.77% |
+| Open-ended EM   | 34.26% |
+| F1 Score        | 34.77% |
 
 ---
 
 # Method 2 — EfficientNet-B0 + BiLSTM + Bilinear Fusion
 
 ## Architecture
+
 - Vision Encoder: EfficientNet-B0
 - Text Encoder: BiLSTM
 - Fusion: Bilinear Fusion
 
 ## Key Features
+
 - Best overall performing model
 - Strong multimodal feature interaction
 - Extensive CNN and fusion experimentation
 
 ## Performance
 
-| Metric | Score |
-|---|---|
-| Overall EM | 60.39% |
+| Metric          | Score  |
+| --------------- | ------ |
+| Overall EM      | 60.39% |
 | Yes/No Accuracy | 79.27% |
-| Open-ended EM | 53.45% |
-| F1 Score | 53.82% |
+| Open-ended EM   | 53.45% |
+| F1 Score        | 53.82% |
 
 ---
 
 # Method 3 — ResNet50 + Stacked Attention + LayerNorm
 
 ## Architecture
+
 - Vision Encoder: ResNet50
 - Text Encoder: LSTM
 - Attention: Stacked Attention Network
 - Normalization: LayerNorm
 
 ## Key Features
+
 - Iterative visual reasoning
 - Attention-based pathology understanding
 - Strong open-ended answer performance
 
 ## Performance
 
-| Metric | Score |
-|---|---|
-| Overall EM | 56.24% |
+| Metric          | Score  |
+| --------------- | ------ |
+| Overall EM      | 56.24% |
 | Yes/No Accuracy | 82.27% |
-| Open-ended EM | 46.66% |
-| F1 Score | 47.82% |
+| Open-ended EM   | 46.66% |
+| F1 Score        | 47.82% |
 
 ---
 
@@ -146,29 +155,11 @@ https://arxiv.org/abs/2003.10286
 # Repository Structure
 
 ```bash
-PathVQA/
+Multimodal-PathVQA/
 │
-├── Method1_FasterRCNN_GRU_BAN/
-│   ├── notebooks/
-│   ├── models/
-│   ├── outputs/
-│   └── README.md
-│
-├── Method2_EfficientNet_BiLSTM/
-│   ├── notebooks/
-│   ├── models/
-│   ├── outputs/
-│   └── README.md
-│
-├── Method3_ResNet_Attention/
-│   ├── notebooks/
-│   ├── models/
-│   ├── outputs/
-│   └── README.md
-│
-├── assets/
-├── presentation/
-├── requirements.txt
+├── Method-01.ipynb    # Faster R-CNN + GRU + BAN
+├── Method-02.ipynb    # EfficientNet + BiLSTM
+├── Method-03.ipynb    # ResNet + Attention
 └── README.md
 ```
 
@@ -177,11 +168,13 @@ PathVQA/
 # Technologies Used
 
 ## Deep Learning
+
 - PyTorch
 - Torchvision
 - Transformers
 
 ## Models
+
 - EfficientNet
 - ResNet50
 - Faster R-CNN
@@ -191,19 +184,18 @@ PathVQA/
 - Stacked Attention Networks
 
 ## Tools
-- Kaggle
 
+- Kaggle
 
 ---
 
-
 # Results Summary
 
-| Method | Best Architecture | Overall EM |
-|---|---|---|
-| Method 1 | Faster R-CNN + BAN | 46.03% |
-| Method 2 | EfficientNet-B0 + Bilinear | 59.09% |
-| Method 3 | ResNet50 + Attention | 56.24% |
+| Method   | Best Architecture          | Overall EM |
+| -------- | -------------------------- | ---------- |
+| Method 1 | Faster R-CNN + BAN         | 46.03%     |
+| Method 2 | EfficientNet-B0 + Bilinear | 59.09%     |
+| Method 3 | ResNet50 + Attention       | 56.24%     |
 
 ---
 
@@ -220,11 +212,11 @@ PathVQA/
 
 # References
 
-1. He et al. — PathVQA (2020)  
-2. BaMCo (2025)  
-3. Path-RAG (2024)  
-4. BLIP (2022)  
-5. EfficientNet (2019)  
+1. He et al. — PathVQA (2020)
+2. BaMCo (2025)
+3. Path-RAG (2024)
+4. BLIP (2022)
+5. EfficientNet (2019)
 6. Multimodal Compact Bilinear Pooling (2016)
 
 ---
