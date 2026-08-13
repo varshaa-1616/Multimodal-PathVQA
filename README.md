@@ -194,7 +194,7 @@ Multimodal-PathVQA/
 | Method   | Best Architecture          | Overall EM |
 | -------- | -------------------------- | ---------- |
 | Method 1 | Faster R-CNN + BAN         | 46.03%     |
-| Method 2 | EfficientNet-B0 + Bilinear | 59.09%     |
+| Method 2 | EfficientNet-B0 + Bilinear | 60.39%     |
 | Method 3 | ResNet50 + Attention       | 56.24%     |
 
 ---
