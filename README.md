@@ -218,11 +218,6 @@ This work was presented as a **poster** at the **2026 International Conference o
 
 The conference is technically co-sponsored by the **IEEE Society on Social Implications of Technology (IEEE SSIT)** and has **IEEE Conference Record #68127**. SASIGD focuses on leveraging AI to address critical global challenges, with emphasis on **sustainability, inclusivity, and equity**.
 
-## Special Recognition
-
-### Poster Presentation at SASIGD 2026
-
-Our work was presented as a research poster at SASIGD 2026, providing an opportunity to present the PathVQA comparative study and its findings to an academic audience working on sustainable and socially impactful AI.
 
 ## References
 
