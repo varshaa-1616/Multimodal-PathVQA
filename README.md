@@ -175,7 +175,6 @@ Method 3 additionally uses:
 ### Tools
 
 - Kaggle
-- Jupyter Notebook
 - Git / GitHub
 
 ## Repository Structure
@@ -196,6 +195,7 @@ Multimodal-PathVQA/
     ├── ResNet50_25pct.ipynb
     ├── ResNet50_50pct.ipynb
     ├── ResNet50_75pct.ipynb
+    ├── ResNet50_100pct.ipynb
     ├── PVTv2B0_25pct.ipynb
     ├── PVTv2B0_50pct.ipynb
     ├── PVTv2B0_75pct.ipynb
