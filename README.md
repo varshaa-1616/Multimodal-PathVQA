@@ -240,7 +240,7 @@ Our work was presented as a research poster at SASIGD 2026, providing an opportu
 - Srivarsha Chivukula
 - Peesari Sathvik Reddy
 
-Department of Artificial Intelligence & Machine Learning  
+Department of Computer Science and Engineering(Artificial Intelligence & Machine Learning)  
 Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India
 
 ## License
